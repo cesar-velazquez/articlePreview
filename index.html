@@ -14,30 +14,49 @@
 <body>
 
     <main class="container">
-        <div class="" style="
-        display: flex; justify-content: center; align-items: center;
-        background-color: white; max-width: 800px;
-        ">
-            <div style="width: 30%;">
-                <img style="width: 100%; object-fit: cover;" src="./imgs/drawers.jpg" alt="">
+        <div class="card">
+            <div class="card-image">
+                <img src="./imgs/drawers.jpg" alt="Image of drawers">
             </div>
-            <div style="width: 70%;">
-                <p>Shift the overall look and feel by adding these wonderful
-                    touches to furniture in your home</p>
-                <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and
-                    uninviting.
-                    I’ve got some simple tips to help you make any room feel complete.</p>
-                <div>
-                    <img src="./imgs/avatar-michelle.jpg" alt="Image of Michelle">
-                    <p>
-                        Michelle Appleton
-                        <span>28 Jun 2020</span>
-                    </p>
+            <div class="card-content">
+                <h1 class="title-cont">Shift the overall look and feel by adding these
+                    wonderful touches to furniture in your home</h1>
+                <p class="content-text">Ever been in a room and felt like something was missing? Perhaps it felt
+                    slightly bare and
+                    uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+                <div id="footer" class="card-footer">
+                    <div id="footer-profile" class="card-footer-profile ">
+                        <img src="./imgs/avatar-michelle.jpg" alt="Image of Michelle">
+                        <p class="profile-name">
+                            Michelle Appleton <br>
+                            <span>28 Jun 2020</span>
+                        </p>
+                    </div>
+                    <div class="card-footer-movile" id="active-footer">
+                        <div id="content-footer" class="hidden design-movil">
+                            <p class="letter-spacing">SHARE</p>
+                            <a href="https://www.facebook.com/" target="_blank"><img src="./imgs/icon-facebook.svg"
+                                    alt="Icon of Facebook"></a>
+                            <a href="https://x.com/?lang=es" target="_blank"><img src="./imgs/icon-twitter.svg"
+                                    alt="Icon of Twitter"></a>
+                            <a href="https://mx.pinterest.com/" target="_blank"><img src="./imgs/icon-pinterest.svg"
+                                    alt="Icon of Pinterest"></a>
+                        </div>
+                        <div></div>
+                    </div>
+
+                    <div>
+                        <button class="share-button" type="button" aria-label="Share">
+                            <img class="share-icon" src="./imgs/icon-share.svg" alt="Share Icon">
+                            <img class="return-icon" src="./imgs/arrow.png" alt="Icon of return" >
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
+    <script src="js/main.js"></script>
 </body>
 
 <footer>

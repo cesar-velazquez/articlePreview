@@ -4,12 +4,251 @@
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+body {
     background-color: rgb(216, 220, 223);
 }
 
 .container {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    max-width: 950px;
+}
+
+.card-image {
+    width: 30%;
+}
+
+.card-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card-content {
+    width: 70%;
+    padding: 2rem;
+    background-color: white;    
+    position: relative;
+}
+
+.title-cont {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.content-text {
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-footer-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-footer-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-weight: bold;
+}
+
+.profile-name span {
+    font-weight: 400;
+    color: gray;
+}
+
+.share-button {
+    background-color: #ffffff00;
+    border: none;
+    outline: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.share-icon {
+    padding: 0.5rem;
+    background: rgba(241, 241, 241, 0);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.return-icon {
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-color: rgb(160, 157, 157);
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.hidden {
+    display: none;
+}
+
+.return-icon.active {
+    display: block;
+}
+
+.design-desktop {
+    display: flex;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    min-width: 280px;
+    gap: 2rem;
+    position: absolute;
+    right: -6.3rem;
+    bottom: 7rem;
+}
+
+.design-desktop::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 1rem;
+    border-style: solid;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+}
+
+.letter-spacing {
+    letter-spacing: 0.5em;
+    color: hsl(212, 23%, 69%);
+    font-weight: 400;
+}
+
+@media screen and (max-width: 991px) {
+    .card {
+        flex-direction: column;
+        max-width: 500px;
+        border-radius: .5rem;
+    }
+
+    .card-content,
+    .card-image {
+        width: 100%;
+    }
+
+    .card-content {
+        border-radius: 0 0 .5rem .5rem;
+    }
+
+    .card-image img {
+        border-radius: .5rem .5rem 0 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .design-movil {
+        display: flex;
+        gap: 2rem;
+        position: static;
+    }
+
+    .card-content {
+        padding: 1rem;
+    }
+
+    .title-cont {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .content-text {
+        font-size: 14px;
+        margin-bottom: 1rem;
+    }
+
+    /******* Estilos para la función con Js ********/
+    .return-icon {
+        background-color: rgb(243, 242, 242);
+        width: 24px;
+        height: 24px;
+        padding: 1px;
+    }
+
+    /* .active-movil {
+        display: block;
+    } */
+
+    .card-footer-movile {
+        display: none;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .active-design-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        background-color: hsl(217, 19%, 35%);
+        color: white;
+        padding: 1rem;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        margin: 0 -1rem -1rem;
+    }
+
+    .footer-hidden {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+
+    .share-icon:active {
+        padding: 0.5rem;
+        background: rgb(241, 241, 241);
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+    }
+
+    .design-desktop::after {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
 }
