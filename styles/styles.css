@@ -22,6 +22,7 @@ body {
     justify-content: center;
     background-color: white;
     max-width: 950px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .card-image {
@@ -131,6 +132,7 @@ body {
     position: absolute;
     right: -6.3rem;
     bottom: 7rem;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 .design-desktop::after {
@@ -176,6 +178,7 @@ body {
         display: flex;
         gap: 2rem;
         position: static;
+        box-shadow: none;
     }
 
     .card-content {
