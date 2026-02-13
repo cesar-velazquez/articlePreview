@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: rgb(216, 220, 223);
+    background-color: hsl(210, 46%, 95%);
 }
 
 .container {
@@ -40,7 +40,7 @@ body {
 .card-content {
     width: 70%;
     padding: 2rem;
-    background-color: white;    
+    background-color: white;
     position: relative;
 }
 
