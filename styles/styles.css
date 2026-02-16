@@ -156,6 +156,7 @@ body {
     .design-desktop {
         right: 0rem;
     }
+
     .design-desktop::after {
         right: 6%;
         left: auto;
