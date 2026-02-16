@@ -194,7 +194,7 @@ body {
 @media screen and (max-width: 767px) {
     .design-movil {
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
         position: static;
         box-shadow: none;
     }
